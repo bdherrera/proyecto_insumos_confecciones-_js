@@ -1,0 +1,21 @@
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+
+}
+
+ #demo {
+    background-color: #C58183;
+      
+ }
+
+ #demo1{
+     padding: 20px;
+     border-radius: 15px;
+     display: flex;
+     align-items: flex-end;
+
+ }
+    
