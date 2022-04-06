@@ -3,4 +3,4 @@
 
 
 
-este es un proyecto de aplicacion web de invetario y pagina statica para una empresa del sector textil
+Este es un proyecto de aplicación web de invetario y página estática para una empresa del sector textil
