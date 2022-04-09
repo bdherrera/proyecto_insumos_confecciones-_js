@@ -3,23 +3,7 @@
     
     width: 1000px;
 }
-.section_5{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: auto;
-    background-color: rgba(238, 238, 238, 0.527);
 
-}
-.ingreso_de_material{
+#box_inventario{
     margin: 10px;
-    border: 2px solid black;
-    padding: 10px;
 }
-
-.delete_information{
-    margin: 10px;
-        border: 2px solid black;
-        padding: 10px;
-}
-

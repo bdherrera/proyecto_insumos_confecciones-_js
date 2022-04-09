@@ -6,149 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login y Registro</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 <body>
-    <main>
-        <div class="contenedor__todo">
-            <div class="caja_trasera">
-                <div class="caja_trasera_login">
-                    <h3>¿Ya tienes una cuenta?</h3>
-                    <p>Inicia sesión para entrar en la página</p>
-                    <button id="btn_iniciar-sesion">Iniciar Sesión</button>
+      <section class="vh-100 gradient-custom">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5 text-center">
+      
+                  <div class="mb-md-5 mt-md-4 pb-5">
+      
+                    <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+                    <p class="text-white-50 mb-5">Please enter your login and password!</p>
+      
+                    <div class="form-outline form-white mb-4">
+                      <input type="email" id="typeEmailX" class="form-control form-control-lg" />
+                      <label class="form-label" for="typeEmailX">Email</label>
+                    </div>
+      
+                    <div class="form-outline form-white mb-4">
+                      <input type="password" id="typePasswordX" class="form-control form-control-lg" />
+                      <label class="form-label" for="typePasswordX">Password</label>
+                    </div>
+      
+                    <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p>
+      
+                    <button class="btn btn-outline-light btn-lg px-5" type="button" href="/inventary/index.html" >Login</button>
+      
+                    <div class="d-flex justify-content-center text-center mt-4 pt-1">
+                      <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+                      <a href="#!" class="text-white"><i class="fab fa-twitter fa-lg mx-4 px-2"></i></a>
+                      <a href="#!" class="text-white"><i class="fab fa-google fa-lg"></i></a>
+                    </div>
+      
+                  </div>
+      
+                  <div>
+                    <p class="mb-0">Don't have an account? <a href="#!" class="text-white-50 fw-bold">Sign Up</a>
+                    </p>
+                  </div>
+      
                 </div>
-                <div class="caja_trasera_register">
-                    <h3>¿Ya tienes una cuenta?</h3>
-                    <p>Haz click para Registrarte</p>
-                    <button id="btn_registrarse">Registrarse</button>
-                </div>
+              </div>
             </div>
-            <!--Formulario de login y registro-->
-            <div class="contenedor_login-register">
-                <!--login-->
-                <form action="" class="formulario__login">
-                    <h2>Iniciar Sesión</h2>
-                    <input type="text" placeholder="Correo Electrónico">
-                    <input type="password" placeholder="contraseña">
-                    <button>Entrar </button>
-                </form>
-                <!--register-->
-                <form action="" class="formulario_register">
-                  <h2>Registrarse</h2>
-                  <input type="text" placeholder="Nombre de Usuario">
-                  <input type="text" placeholder="Correo Electrónico">
-                  <input type="text" placeholder="contraseña">
-                  <input type="password" placeholder="contraseña">
-                  <input type="password" placeholder="confimar contraseña">
-                  <button>Registrate </button>
-              </form>
-                <!--form class="row g-3">
-                    <div class="col-md-4">
-                      <label for="validationDefault01" class="form-label">Nombres </label>
-                      <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
-                    </div>
-                    <div class="col-md-4">
-                      <label for="validationDefault02" class="form-label">Apellidos</label>
-                      <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
-                    </div>
-                    <div class="col-md-4">
-                      <label for="validationDefaultUsername" class="form-label">Nombre de Usuario</label>
-                      <div class="input-group">
-                        <span class="input-group-text" id="inputGroupPrepend2">@</span>
-                        <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <label for="validationDefault03" class="form-label">Ciudad</label>
-                      <input type="text" class="form-control" id="validationDefault03" required>
-                    </div>
-                    <div class="col-md-3">
-                      <label for="validationDefault04" class="form-label">Departamneto</label>
-                      <select class="form-select" id="validationDefault04" required>
-                        <option selected disabled value="">Choose...</option>
-                        <option>...</option>
-                      </select>
-                    </div>
-                    <div class="col-md-3">
-                      <label for="validationDefault05" class="form-label">Zip</label>
-                      <input type="text" class="form-control" id="validationDefault05" required>
-                    </div>
-                    <div class="col-12">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                        <label class="form-check-label" for="invalidCheck2">
-                          De Acuerdo con los terminos y condiciones
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <button class="btn btn-primary" type="submit">Registrarse</button>
-                    </div>
-                  </!--form-->
-            </div>
+          </div>
         </div>
-    </main>
-    <script>
-      document.getElementById("btn_iniciar-sesion").addEventListener("click",iniciarSesion());
-document.getElementById("btn_registrarse").addEventListener("click",register);
-window.addEventListener("resize", anchoPage);
-
-//declarancion de variables
-var contenedor_login_register=document.querySelector(".contenedor_login-register");
-var formulario_login=document.querySelector(".formulario__login");
-var formulario_register=document.querySelector(".formulario__register");
-var caja_trasera_login=document.querySelector(".caja_trasera_login");
-var caja_trasera_register=document.querySelector(".caja_trasera_register");
-
-function anchoPage(){
-
-    if (window.innerWidth > 850){
-        caja_trasera_register.style.display = "block";
-        caja_trasera_login.style.display = "block";
-    }else{
-        caja_trasera_register.style.display = "block";
-        caja_trasera_register.style.opacity = "1";
-        caja_trasera_login.style.display = "none";
-        formulario_login.style.display = "block";
-        contenedor_login_register.style.left = "0px";
-        formulario_register.style.display = "none";   
-    }
-}
-
-
-
-function iniciarSesion(){
-    if (window.innerWidth > 850){
-        formulario_login.style.display = "block";
-        contenedor_login_register.style.left = "10px";
-        formulario_register.style.display = "none";
-        caja_trasera_register.style.opacity = "1";
-        caja_trasera_login.style.opacity = "0";
-    }else{
-        formulario_login.style.display = "block";
-        contenedor_login_register.style.left = "0px";
-        formulario_register.style.display = "none";
-        caja_trasera_register.style.display = "block";
-        caja_trasera_login.style.display = "none";
-    }
-}
-
-function register(){
-    if (window.innerWidth > 850){
-        formulario_register.style.display = "block";
-        contenedor_login_register.style.left = "410px";
-        formulario_login.style.display = "none";
-        caja_trasera_register.style.opacity = "0";
-        caja_trasera_login.style.opacity = "1";
-    }else{
-        formulario_register.style.display = "block";
-        contenedor_login_register.style.left = "0px";
-        formulario_login.style.display = "none";
-        caja_trasera_register.style.display = "none";
-        caja_trasera_login.style.display = "block";
-        caja_trasera_login.style.opacity = "1";
-    }
-}
-
-    </script>
+      </section>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
